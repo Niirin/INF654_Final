@@ -1,0 +1,15 @@
+{
+  "name": "infproj",
+  "version": "1.0.0",
+  "description": "Typing Game & User activity logger",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Niirin",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.0"
+  }
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Type Tester</title>
+    <link rel="stylesheet" href="/css/materialize.min.css" />
+    <link rel="stylesheet" href="/css/index.css"/>
+    <!-- Import Google Icon Font -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="grey lighten-5">
+    <header>
+      <!-- Nav bar for Bigger screens -->
+      <nav class="z-depth-0 red lighten-2">
+        <div class="nav-wrapper container">
+          <a
+            href="/index.html"
+            aria-label="Typing tester Home"
+            class="brand-logo white-text"
+          >
+            Type<span>Tester</span>
+          </a>
+          <!-- Hamburger Menu for medium and small screens -->
+          <a
+            href="#"
+            data-target="mobile-menu"
+            class="sidenav-trigger right hide-on-med-and-up black-text"
+            aria-label="Open side menu"
+          >
+            <i class="material-icons">menu</i>
+          </a>
+          <!-- Navbar Links for large screens -->
+          <ul class="right hide-on-small-only black-text">
+            <li>
+              <a
+                href="/index.html"
+                class="waves-effect"
+                >About</a>
+            </li>
+            <li>
+              <a
+                href="/index.html"
+                class="waves-effect"
+              >
+                Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <aside>
+      <!-- Sidenav for small and medium screens -->
+      <ul class="sidenav" id="mobile-menu">
+        <li><a class="subheader">Typing Tester</a></li>
+        <li>
+          <a href="/" class="waves-effect black-text">Home</a>
+        </li>
+        <li>
+          <a
+            href="/index.html"
+            class="waves-effect"
+            >About</a
+          >
+        </li>
+        <li>
+          <a
+            href="/index.html"
+            class="waves-effect"
+          >Contact</a
+          >
+        </li>
+      </ul>
+    </aside>
+
+    <main>
+      <!-- choosing testing options -->
+       <div class="container">
+        <h4>Timed Typing Test</h4>
+       </div>
+       <div class="tasks container grey-text text-darken-1 white test-card">
+        <div class="row valign-wrapper" style="margin-bottom: 0;">
+          <div class="col s6">
+            <h5>00:25s</h5>
+          </div>
+          <div class="col s6">
+            <a class="waves-effect waves-dark btn teal accent-1 grey-text text-darken-2 right" id="button25s" aria-label="start 25 seconds test" >Start
+              <i class="material-icons left" style="font-size: 30px">arrow_right</i>
+            </a>
+          </div>
+        </div>
+       </div>
+    </main>
+
+    <script src="/js/materialize.min.js"></script>
+    <script src="/js/index.js"></script>
+  </body>
+</html>
