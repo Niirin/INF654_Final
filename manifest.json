@@ -2,11 +2,27 @@
     "name": "Type Tester",
     "short_name": "TypeTest",
     "description": "This is a simple typing game",
-    "start_url": "./index.html",
-    "scope": "./",
+    "start_url": "./index.ejs",
+    "scope": "/",
     "display": "standalone",
     "background_color": "#f5f5f5",
-    "theme_color": "#00897b",
+    "theme_color": "#FFE1C4",
     "lang": "en-US",
-    "orientation": "portrait-primary"
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "/public/img/typeIcon.jpg",
+            "type": "image/jpg",
+            "size": "200x200"
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "/public/img/screenshots/Screenshot.png",
+            "type": "image/png",
+            "sizes": "1913x510",
+            "form_factor": "wide"
+        }
+    ]
+
 }
