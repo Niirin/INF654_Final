@@ -18,6 +18,10 @@ app.get("/", (req, res) => {
     res.render("index");
 })
 
+app.get("/manifest.json", (req, res) => {
+    res.sendFile(path.join(__dirname, "manifest.json"));
+});
+
 
 // app.set("views",path.join(__dirname, "/pages"));
 

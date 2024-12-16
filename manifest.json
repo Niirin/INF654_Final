@@ -11,14 +11,29 @@
     "orientation": "portrait-primary",
     "icons": [
         {
-            "src": "/public/img/typeIcon.jpg",
-            "type": "image/jpg",
-            "size": "200x200"
+            "src": "/img/icon_128.png",
+            "type": "image/png",
+            "size": "128x128"
+        },
+        {
+            "src": "/img/icon_512.png",
+            "type": "image/png",
+            "size": "512x512"
+        },
+        {
+            "src": "/img/icon_32.png",
+            "type": "image/png",
+            "size": "32x32"
+        },
+        {
+            "src": "/img/icon_16.png",
+            "type": "image/png",
+            "size": "16x16"
         }
     ],
     "screenshots": [
         {
-            "src": "/public/img/screenshots/Screenshot.png",
+            "src": "img/screenshots/Screenshot.png",
             "type": "image/png",
             "sizes": "1913x510",
             "form_factor": "wide"
