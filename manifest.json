@@ -1,0 +1,12 @@
+{
+    "name": "Type Tester",
+    "short_name": "TypeTest",
+    "description": "This is a simple typing game",
+    "start_url": "./index.html",
+    "scope": "./",
+    "display": "standalone",
+    "background_color": "#f5f5f5",
+    "theme_color": "#00897b",
+    "lang": "en-US",
+    "orientation": "portrait-primary"
+}

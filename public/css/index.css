@@ -1,4 +1,43 @@
+body {
+    font-family: "Ubuntu", sans-serif;
+}
+
 .test-card{
     border-radius: 5px;
     border: 1px solid;
+}
+
+.quote {
+    font-size: large;
+}
+
+.type-area {
+    border: 1px solid !important;
+    background-color: #fff !important;
+    padding: 0.75rem !important;
+    border-radius: 5px !important;
+
+}
+
+/* .cpm, .wpm  {
+    display: none;
+  } */
+
+.header_text {
+    font-size: 1.5rem;
+    color: grey;
+}
+
+.resDis {
+    font-size: 1.3rem;
+    color: green;
+}
+
+.correct_char {
+    color: green;
+}
+
+.incorrect_char {
+    color: red;
+    text-decoration: underline red;
 }

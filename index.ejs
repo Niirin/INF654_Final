@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Type Tester</title>
+    <link rel="stylesheet" href="/css/materialize.min.css" />
+    <link rel="stylesheet" href="/css/index.css"/>
+    <!-- Import Google Icon Font -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="grey lighten-5">
+    <header>
+      <%- include('./public/pages/navtemplate.ejs'); %>
+  </header>
+    <main  class="container">
+      <!-- choosing testing options -->
+      <div>
+      <h4>Timed Typing Test</h4>
+      </div>
+
+      <!-- section for 25second test -->
+      <div class="row tasks grey-text text-darken-1 white test-card testDiv">
+        <div class="row valign-wrapper" style="margin-bottom: 0;">
+          <div class="col s6">
+            <h5>25s</h5>
+          </div>
+          <div class="col s6">
+            <a class="waves-effect waves-dark btn teal accent-1 grey-text text-darken-2 right" 
+              id="button25s" 
+              aria-label="start 25 seconds test"
+                >Start
+              <i class="material-icons left" style="font-size: 30px">arrow_right</i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- section for 60seconds test -->
+      <div class="row tasks grey-text text-darken-1 white test-card testDiv">
+        <div class="row valign-wrapper" style="margin-bottom: 0;">
+          <div class="col s6">
+            <h5>60s</h5>
+          </div>
+          <div class="col s6">
+            <a class="waves-effect waves-dark btn teal accent-1 grey-text text-darken-2 right" 
+              id="button60s" 
+              aria-label="start 60 seconds test"
+                >Start
+              <i class="material-icons left" style="font-size: 30px">arrow_right</i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+       <!-- Testing section if clicked start for 25s mode -->
+      <section class="row showTest">
+        <div class="row testStats">
+          <div class="col s4">
+            <h5 id="timer"></h5>
+          </div>
+          <div class="col s4">
+            <div class="card-panel errors" style="border-radius: 5px;">
+              <div class="header_text">Errors</div>
+              <div class="curr_errors resDis">0</div>
+            </div>
+          </div>
+          <div class="col s4">
+            <div class="card-panel accuracy" style="border-radius: 5px;">
+              <div class="header_text">% Accuracy</div>
+              <div class="curr_accuracy resDis">100</div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="quote">
+          Quote will be here
+        </div>
+
+
+        <div class="row">
+          <div class="input-field test-container">
+            <textarea id="textarea2" 
+            class="type-area materialize-textarea"
+            placeholder="Start typing here"
+            oninput="processCurrentInput()"
+            ></textarea>
+          </div>
+        </div>
+
+        <!-- restart button for 25s mode -->
+        <div class="row col s2" style="padding: 0;" id="restart_btn_25s">
+          <a class="waves-effect waves-dark btn teal accent-1 grey-text text-darken-2" 
+          >
+          Restart
+          </a>
+        </div>
+
+        <!-- restart button for 60s mode -->
+        <div class="row col s2" style="padding: 0;" id="restart_btn_60s">
+          <a class="waves-effect waves-dark btn teal accent-1 grey-text text-darken-2" 
+          >
+          Restart
+          </a>
+        </div>
+
+      </section>
+
+
+      <!-- Section for when the test is over -->
+      <section class="result">
+        <h5 class="grey-text text-darken-1">Test Complete!</h5>
+        <div class="row">
+          <div class="col s3">
+            <div class="card-panel wpm" style="border-radius: 5px;">
+              <div class="header_text">WPM</div>
+              <div class="curr_wpm resDis">100</div>
+            </div>
+          </div>
+          <div class="col s3">
+            <div class=" card-panel cpm" style="border-radius: 5px;">
+              <div class="header_text">CPM</div>
+              <div class="curr_cpm resDis">100</div>
+            </div>
+          </div>
+          <div class="col s3">
+            <div class="card-panel errors" style="border-radius: 5px;">
+              <div class="header_text">Errors</div>
+              <div class="curr_errors resDis">0</div>
+            </div>
+          </div>
+          <div class="col s3">
+            <div class="card-panel accuracy" style="border-radius: 5px;">
+              <div class="header_text">% Accuracy</div>
+              <div class="curr_accuracy resDis">100</div>
+            </div>
+          </div>
+        </div>
+        <!-- buttons -->
+        <div class="row col s4" style="padding: 0;">
+          <a class="waves-effect waves-dark btn teal accent-1 grey-text text-darken-2"
+          onclick="goToHome()">
+          Home
+          </a>
+        </div>
+        
+      </section>
+    </main>
+
+    <script src="/js/materialize.min.js"></script>
+    <script src="/js/index.js"></script>
+  </body>
+</html>
